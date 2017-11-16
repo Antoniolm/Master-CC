@@ -1,9 +1,32 @@
 ## Provisionamiento con ansible
+
+### Introducción
+
 El provisionamiento de ansible se ha realizado sobre una máquina virtual de amazon web service. Dicha máquina
 utiliza la versión 16.04 de ubuntu.
 
-El primer paso que he tenido que realizar ha sido instalar python en la máquina a provisionar ya que es necesarios
-para la el uso de ansible. Para ello:
+### Instalaciones requeridas
+Antes de comenzar a realizar el provisionamiento debemos instalar en nuestra máquina la aplicación ansible, para ello debemos introducir el siguiente comando:
+
+```
+sudo apt-get install software-properties-common
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt-get update
+sudo apt-get install ansible
+```
+### Descripción del provisionamiento
+
+En este provisionamiento se han instalado diversos paquetes para el correcto despliegue de nuestro microservicio. Los paquetes instalados han sido:
+* **Django y Django rest framenwork** : para crear la API de nuestro sistema.
+* **Python3** : Lenguaje en el que se desarrollara el proyecto.
+* **Pip3** : Administrador de paquetes de python.
+* **Git** : Para la gestión del proyecto.
+* **Pytest** : Como framework para realizar pruebas unitarias.
+* **Boto3** : SDK de Amazon Web Service(AWS) para poder utilizar el gestor de ficheros de AWS
+
+#### Pasos realizados
+
+El primer paso que he tenido que realizar ha sido instalar python en la máquina a provisionar ya que es necesarios para la el uso de ansible. Para ello he conectado por ssh a la máquina virtual y he realizado el siguiente comando:
 ```
 sudo apt-get install python
 ```
