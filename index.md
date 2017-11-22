@@ -49,6 +49,13 @@ que no tenemos que realizar el provisonamiento desde dentro de la máquina como 
 Chef-solo se ha utiizado por su rapida instalacción y su facilidad de uso. Ya que nos permite provisionar de una forma sencilla una maquina virtual. Aunque tiene el problema de que se debe provisionar ella misma como ya se menciono anteriormente.
 Para mas información -> [Readme](https://github.com/Antoniolm/Master-CC/blob/master/provision/chef-solo/README.md)
 
+### Automatización
+La automatización se ha realizado utilizando el cliente de azure. He seleccionado este cliente ya que quería probar otro tipo de servicios de virtualización de los disponibles.
+La imagen utilizada ha sido Debian 8 para comprobar que nuestro provisionamiento funciona correctamente en diferentes sistemas.
+Para mas información -> [Readme](https://github.com/Antoniolm/Master-CC/blob/master/automatizacion/README.md)
+
+Despliegue:52.166.220.63
+
 ## Licencia
 
   Este proyecto será liberado bajo la licencia [GNU GLP V3](https://github.com/Antoniolm/Master-CC/blob/master/LICENSE)
