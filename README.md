@@ -31,19 +31,22 @@ Se han realizado dos provisiones cada uno con una aplicación diferente. Uno uti
 
 #### Ansible
 Ansible ha sido mi primera opción para provisionar la máquina virtual debido a
-que no tenemos que realizar el provisonamiento desde dentro de la máquina como ocurre con chef-solo, por ello veo una mejor opción ansible para realizar un provisionamiento a multiples máquinas a la vez.
+que no tenemos que realizar el provisonamiento desde dentro de la máquina como ocurre con chef-solo, por ello veo una mejor opción ansible para realizar un provisionamiento a múltiples máquinas a la vez.
 Para mas información -> [Readme](https://github.com/Antoniolm/Master-CC/blob/master/provision/ansible/README.md)
 
 #### Chef-solo
-Chef-solo se ha utilizado por su rapida instalacción y su facilidad de uso. Ya que nos permite provisionar de una forma sencilla una maquina virtual. Aunque tiene el problema de que se debe provisionar ella misma como ya se menciono anteriormente.
+Chef-solo se ha utilizado por su rapida instalacción y su facilidad de uso. Ya que nos permite provisionar de una forma sencilla una maquina virtual. Aunque tiene el problema de que se debe provisionar ella misma como ya se mencionó anteriormente.
 Para mas información -> [Readme](https://github.com/Antoniolm/Master-CC/tree/master/provision/chef-solo)
 
 ### Automatización de la creación de maquinas virtuales
-La automatización se ha realizado utilizando el cliente de azure. He seleccionado este cliente ya que quería probar otro tipo de servicios de virtualización de los disponibles.
-La imagen utilizada ha sido Debian 8 para comprobar que nuestro provisionamiento funciona correctamente en diferentes sistemas.
+La automatización se ha realizado utilizando el cliente de azure. He seleccionado este cliente ya que quería probar otro tipo de servicios de virtualización de los disponibles. Además, me permitía una creación más intuitiva de las máquinas virtuales y me permitía obtener la información de una manera más sencilla que AWS.
+
+He utilizado una imagen Debian porque tras investigar varias distribuciones de linux descubri que es una de las más ligeras y además es más segura y tiene un mejor rendimiento que otras distribuciones. Además, en el aspecto de personalización del sistema operativo supera en mucho a otras distribuciones. Todos estos aspectos me han hecho decantarme por esta distribuciones frente a otras distribuciones como centos o ubuntu.
+
+ He utilizado la PPA de ansible ya que con el no necesito realizar instalaciones previas en la maquina a provisionar como sucede con chef-solo.
 Para mas información -> [Readme](https://github.com/Antoniolm/Master-CC/blob/master/automatizacion/README.md)
 
-Despliegue:52.166.220.63
+Despliegue:40.118.98.29
 
 
 ## Licencia

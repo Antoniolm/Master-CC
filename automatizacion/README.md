@@ -2,10 +2,11 @@
 
 ### Introducción
 
-Se ha creado la máquina virtual utilizando el cliente azure. El motivo de usar este
-cliente ha sido el probar diferentes tipos de servicios de virtualización, ya que se utilizo amazon web service en el hito anterior.
+La automatización se ha realizado utilizando el cliente de azure. He seleccionado este cliente ya que quería probar otro tipo de servicios de virtualización de los disponibles. Además, me permitía una creación más intuitiva de las máquinas virtuales y me permitía obtener la información de una manera más sencilla que AWS.
 
-Se ha seleccionado una imagen de Debian 8 para comprobar que nuestro provisionamiento funciona correctamente en diferentes sistemas.
+He utilizado una imagen Debian porque tras investigar varias distribuciones de linux descubri que es una de las más ligeras y además es más segura y tiene un mejor rendimiento que otras distribuciones. Además, en el aspecto de personalización del sistema operativo supera en mucho a otras distribuciones. Todos estos aspectos me han hecho decantarme por esta distribuciones frente a otras distribuciones como centos o ubuntu.
+
+ He utilizado la PPA de ansible ya que con el no necesito realizar instalaciones previas en la maquina a provisionar como sucede con chef-solo.
 
 ### Instalaciones requeridas
 Antes de comenzar a realizar el provisionamiento debemos instalar en nuestra máquina la aplicación ansible, para ello debemos introducir el siguiente comando:
