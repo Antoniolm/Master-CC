@@ -46,7 +46,7 @@ He utilizado una imagen Debian porque tras investigar varias distribuciones de l
  He utilizado la PPA de ansible ya que con el no necesito realizar instalaciones previas en la maquina a provisionar como sucede con chef-solo.
 Para mas información -> [Readme](https://github.com/Antoniolm/Master-CC/blob/master/automatizacion/README.md)
 
-Despliegue:40.118.98.29
+Despliegue:13.73.161.153
 
 
 ## Licencia

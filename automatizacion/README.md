@@ -9,13 +9,10 @@ He utilizado una imagen Debian porque tras investigar varias distribuciones de l
  He utilizado la PPA de ansible ya que con el no necesito realizar instalaciones previas en la maquina a provisionar como sucede con chef-solo.
 
 ### Instalaciones requeridas
-Antes de comenzar a realizar el provisionamiento debemos instalar en nuestra máquina la aplicación ansible, para ello debemos introducir el siguiente comando:
+Antes de comenzar a realizar el provisionamiento debemos instalar en nuestra máquina la aplicación ansible, para ello debemos tener instalado python y su gestionador de paquetes (pip). Para instalar ansible tenemos que introducir el siguiente comando:
 
 ```
-sudo apt-get install software-properties-common
-sudo apt-add-repository ppa:ansible/ansible
-sudo apt-get update
-sudo apt-get install ansible
+sudo pip install ansible
 ```
 Además, tenemos que instalar el comando jq para el procesamiento de datos en formato  json, para ello:
 
