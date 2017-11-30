@@ -48,6 +48,14 @@ Para mas información -> [Readme](https://github.com/Antoniolm/Master-CC/blob/ma
 
 Despliegue:13.73.161.153
 
+### Orquestación
+
+La orquestación se ha realizado utilizando vagrant junto con el cliente de azure. He seleccionado este cliente ya que permitía obtener la información necesaria para vangrant de una forma sencilla y en unos pocos pasos he podido realizar mis primeras orquestaciones.
+
+La selección de la imagen y del PPA ansible ha sido seleccionado por los mismos parametros que se indicaron en secciones anteriores.
+Para mas información ->  [Readme](https://github.com/Antoniolm/Master-CC/blob/master/orquestacion/README.md)
+
+Despliegue Vagrant:52.265.78.170
 
 ## Licencia
 
