@@ -8,6 +8,8 @@ He utilizado una imagen Debian porque tras investigar varias distribuciones de l
 
  He utilizado la PPA de ansible ya que con el no necesito realizar instalaciones previas en la maquina a provisionar como sucede con chef-solo.
 
+Se ha realizado la orquestación de dos máquinas virtual. Una de ellas para el servicio del proyecto (Procesador de objetos 3D) y se ha añadido un nuevo servicio para realizar la prueba de orquestación. Este nuevo servicio se encargaría de realizar un procesamiento de las imágenes del motor gráfico.
+
 ### Instalaciones requeridas
 Antes de comenzar a realizar el provisionamiento debemos instalar en nuestra máquina la aplicación ansible, para ello debemos tener instalado python y su gestionador de paquetes (pip). Para instalar ansible tenemos que introducir el siguiente comando:
 
