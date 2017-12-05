@@ -28,7 +28,7 @@ az account list --query "[?isDefault].id" -o tsv
 ```
 El primero es para obtener los parámetros : tenant id, client secret, client id . El segundo nos provee de la id de nuestra subscripción
 
-Una vez realizado todo esto solo nos falta levantar las máquinas virtuales indicadas en nuestro fichero Vagrantfile. Se ha utilizado el argumento **--no-parallel** porque ansible no trabaja correctamente de forma paralela.
+Una vez realizado todo esto solo nos falta levantar las máquinas virtuales indicadas en nuestro fichero Vagrantfile. Se ha utilizado el argumento **--no-parallel** porque azure no trabaja correctamente de forma paralela.
 ```
 vagrant up --no-parallel
 ```
