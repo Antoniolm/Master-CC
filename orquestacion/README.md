@@ -20,13 +20,18 @@ vagrant plugin install vagrant-azure --plugin-version '2.0.0.pre6'
 
 ### Descripción de la orquestación
 El primer paso es realizar nuestro logeo en el cliente de azure (az login).
-A continuación debemos introducir en las variables de entorno la información de nuestra cuenta de azure. Para ello tenemos que realizar los siguientes comandos:
+A continuación debemos introducir en las variables de entorno la información de nuestra cuenta de azure en nuestro vagrantFile. Para ello tenemos que realizar los siguientes comandos:
 
 ```
 az ad sp create-for-rbac
 az account list --query "[?isDefault].id" -o tsv
 ```
 El primero es para obtener los parámetros : tenant id, client secret, client id . El segundo nos provee de la id de nuestra subscripción
+
+A continuación debemos añadir la máquina de azure para ello:
+```
+vagrant box add azure https://github.com/azure/vagrant-azure/raw/v2.0/dummy.box --provider azure
+```
 
 Una vez realizado todo esto solo nos falta levantar las máquinas virtuales indicadas en nuestro fichero Vagrantfile. Se ha utilizado el argumento **--no-parallel** porque azure no trabaja correctamente de forma paralela.
 ```
