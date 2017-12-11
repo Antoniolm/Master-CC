@@ -20,7 +20,7 @@ Vagrant.configure("2") do |config|
     end
 
     serviceObject.vm.provision "ansible" do |ansible|
-      ansible.playbook = "provisionObject.yml"
+      ansible.playbook = "provision.yml"
     end
 
   end
@@ -46,7 +46,7 @@ Vagrant.configure("2") do |config|
     end
 
     serviceImage.vm.provision "ansible" do |ansible|
-      ansible.playbook = "provisionImage.yml"
+      ansible.playbook = "provision.yml"
     end
   end
 

@@ -55,7 +55,7 @@ La orquestación se ha realizado utilizando vagrant junto con el cliente de azur
 La selección de la imagen y del PPA ansible ha sido seleccionado por los mismos parametros que se indicaron en secciones anteriores.
 Para mas información ->  [Readme](https://github.com/Antoniolm/Master-CC/blob/master/orquestacion/README.md)
 
-Despliegue Vagrant:52.178.101.64
+Despliegue Vagrant:52.233.143.192
 
 ## Licencia
 
