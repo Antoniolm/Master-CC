@@ -10,4 +10,4 @@ RUN pip3 install flask pytest boto3
 COPY contenedores/service.py /app
 
 ENTRYPOINT ["python"]
-CMD ["contenedores/service.py"]
+CMD ["service.py"]
