@@ -57,6 +57,15 @@ Para mas información ->  [Readme](https://github.com/Antoniolm/Master-CC/blob/m
 
 Despliegue Vagrant:52.233.143.192
 
+### Contenedores
+
+La imagen utilizada ha sido una imagen alpine([link](https://hub.docker.com/r/frolvlad/alpine-python3/)) con python3 y pip3 instalados. He utilizado esta imagen por dos motivos. El primer motivo es su peso de 61mb aproximadamente lo cual me permite una mayor flexibilidad, el seguno motivo es que tenga preinstalado los paquetes de python3 y pip3 los cuales son utilizados en mi proyecto.
+
+Se ha utilizado la plataforma azure ya que me ha permitido utilizar mi imagen publica de dockerhub de una manera rápida y sin ninguna dificultad.
+Para mas información ->  [Readme](https://github.com/Antoniolm/Master-CC/blob/master/contenedores/README.md)
+
+Contenedor:
+
 ## Licencia
 
 Este proyecto será liberado bajo la licencia [GNU GLP V3](https://github.com/Antoniolm/Master-CC/blob/master/LICENSE)
