@@ -7,7 +7,7 @@ RUN apk update && apk upgrade
 RUN apk add git
 
 RUN pip3 install flask pytest boto3
-COPY service.py /app
+COPY contenedores/service.py /app
 
 ENTRYPOINT ["python"]
-CMD ["service.py"]
+CMD ["contenedores/service.py"]
