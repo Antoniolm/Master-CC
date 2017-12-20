@@ -64,6 +64,13 @@ La orquestación se ha realizado utilizando vagrant junto con el cliente de azur
 La selección de la imagen y del PPA ansible ha sido seleccionado por los mismos parametros que se indicaron en secciones anteriores.
 Para mas información ->  [Readme](https://github.com/Antoniolm/Master-CC/blob/master/orquestacion/README.md)
 
+### Contenedores
+
+La imagen utilizada ha sido una imagen alpine([link](https://hub.docker.com/r/frolvlad/alpine-python3/)) con python3 y pip3 instalados. He utilizado esta imagen por dos motivos. El primer motivo es su peso de 61mb aproximadamente lo cual me permite una mayor flexibilidad, el seguno motivo es que tenga preinstalado los paquetes de python3 y pip3 los cuales son utilizados en mi proyecto.
+
+Se ha utilizado la plataforma azure ya que me ha permitido utilizar mi imagen publica de dockerhub de una manera rápida y sin ninguna dificultad.
+Para mas información ->  [Readme](https://github.com/Antoniolm/Master-CC/blob/master/contenedores/README.md)
+
 ## Licencia
 
   Este proyecto será liberado bajo la licencia [GNU GLP V3](https://github.com/Antoniolm/Master-CC/blob/master/LICENSE)
