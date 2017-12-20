@@ -6,10 +6,10 @@ Vagrant.configure("2") do |config|
 
     azure.vm_image_urn="credativ:Debian:8:latest"
 
-    azure.tenant_id = "c4fdfd49-2e3f-499c-a883-07f5b579d63f"
-    azure.client_id = "b27b2c9b-7674-4544-b532-690dd23e9619"
-    azure.client_secret = "9fab1b31-f54d-414f-90a4-d646de2a3b61"
-    azure.subscription_id = "60805b7d-7e91-43e9-b534-26417d4a711b"
+    azure.tenant_id = ENV['AZURE_TENANT_ID']
+    azure.client_id = ENV['AZURE_CLIENT_ID']
+    azure.client_secret = ENV['AZURE_CLIENT_SECRET']
+    azure.subscription_id = ENV['AZURE_SUBSCRIPTION_ID']
   end
 
   config.vm.define "serviceObjectData" do |serviceObject|
