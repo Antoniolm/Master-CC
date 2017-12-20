@@ -18,26 +18,10 @@ sudo apt-get install docker docker.io
 ### Descripción del hito
 
 #### Creación de la imagen docker
-El primer paso que debemos de realizar es loguear nuestro cliente docker tras registrarnos en DockerHub, para ello:
-
-```
-sudo docker login
-```
-
-Una vez realizado este paso debemos crear la imagen a partir de nuestro dockerfile, para ello:
-```
-sudo docker build -t antoniolm/serviciocc .
-```
-
-Una vez tengamos nuestra imagen podremos subirla a dockerHub. Para subir la imagen debemos realizar el siguiente comando:
-
-```
-sudo docker push antoniolm/serviciocc
-```
-![](imgs/pushImage.png)
+Debemos crear la imagen a partir de nuestro dockerfile, para ello debemos enlazar nuestro repositorio de Github con Dockerhub para asi poder crear automaticamente nuestra imagen.
 
 Tras esto podremos acceder a nuestra imagen a través de dockerHub con el enlace:
-https://hub.docker.com/r/antoniolm/serviciocc/
+https://hub.docker.com/r/antoniolm/master-cc
 
 #### Despliegue en azure de la imagen docker
 
@@ -56,12 +40,12 @@ Tras esto debemos crear el plan de nuestro servicio:
 az appservice plan create --name serviceAntoniolmPlan --resource-group serviceGroup --sku S1 --is-linux
 
 ```
-Tras todo esto podemos crear nuestra web app service con nuestra imagen subida a dockerHUB. El comando para ello es:
+Una vez tengamos listo nuestro plan podemos crear nuestra web app service con nuestra imagen subida a dockerHUB. El comando para ello es:
 ```
-az webapp create --resource-group serviceGroup --plan serviceAntoniolmPlan --name serviceAntoniolm --deployment-container-image-name antoniolm/serviciocc
+az webapp create --resource-group serviceGroup --plan serviceAntoniolmPlan --name serviceAntoniolm --deployment-container-image-name antoniolm/master-cc
 
 ```
-![](imgs/webappCreated.png)
+![](imgs/createdWebApp.png)
 
 Por último, debemos añadir a nuestro servicio la key PORT para indicar el puerto que usará el servicio. Para ello:
 ```
@@ -72,4 +56,4 @@ az webapp config appsettings set -g serviceGroup -n serviceAntoniolm --settings 
 
 Una vez realizado todo esto podemos comprobar que nuestro servicio nos devuelve un status ok:
 
-![](imgs/azCliDONE.png)
+![](imgs/statusOk.png)
