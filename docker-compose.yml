@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  mongo:
+    image: 'mongo:latest'
+    container_name: mongo
+    volumes:
+      - 'mongo:/data/db'
+
+  service:
+    build: compose/service
+    container_name: service
+    ports:
+      - "80:5000"
+    depends_on:
+      - 'mongo'
+
+volumes:
+  mongo:
