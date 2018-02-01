@@ -68,6 +68,17 @@ Contenedor:https://serviceantoniolm.azurewebsites.net
 
 Dockerhub:https://hub.docker.com/r/antoniolm/master-cc
 
+### Composición de servicios
+
+La imagen utilizada ha sido una imagen alpine con python3 y pip3 instalados. He utilizado esta imagen por dos motivos. El primer motivo es su peso de 61mb aproximadamente lo cual me permite una mayor flexibilidad, el seguno motivo es que tenga preinstalado los paquetes de python3 y pip3 los cuales son utilizados en mi proyecto.
+
+Para esta composición de servicios se iba a realizar con el gestor de ficheros S3 de amazon, pero debido a no tener el presupuesto suficiente para ello se ha decidido utilizar la segunda opción que se barajó en el comienzo de este proyecto. Dicha segunda opción era utilizar mongoDB para el almacenamiento de los objetos 3D. Se ha utilizado este enfoque en esta práctica ya que tras profundizar en las caracteristicas de mongoDB ([link](https://www.mongodb.com/blog/post/storing-large-objects-and-files-in-mongodb)) he podido llegar a la conclusión de que es una opción tan válida como la del uso de un gestor de ficheros como el ya mencionado S3 de amazon. Además, de esta forma puedo realizar una composición del servicio principal del proyecto y del servicio de mongoDB.
+
+Se ha utilizado la plataforma azure ya que me ha permitido utilizar mi composición de servicios de una manera rápida y sin ninguna dificultad.
+Para mas información ->  [Readme](https://github.com/Antoniolm/Master-CC/blob/master/compose/README.md)
+
+Hito6:http://dnshitofinal.westeurope.cloudapp.azure.com
+
 ## Licencia
 
 Este proyecto será liberado bajo la licencia [GNU GLP V3](https://github.com/Antoniolm/Master-CC/blob/master/LICENSE)
